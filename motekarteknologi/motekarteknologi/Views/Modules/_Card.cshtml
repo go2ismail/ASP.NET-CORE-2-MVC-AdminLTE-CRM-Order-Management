@@ -1,0 +1,12 @@
+﻿@model Module
+
+<div class="col-sm-4">
+    <div class="card bg-primary">
+        <div class="card-body">
+            <h1 class="card-title text-right">@Model.Name</h1>
+            <br/>
+            <p class="card-text"></p>
+            <a href="@Url.Action(Model.Action, Model.Controller, new { Area = Model.Area })" class="btn btn-warning">Go to module...</a>
+        </div>
+    </div>
+</div>

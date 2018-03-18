@@ -12,7 +12,7 @@ namespace motekarteknologi.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            return RedirectToAction("Index", "Modules");
         }
 
         public IActionResult About()

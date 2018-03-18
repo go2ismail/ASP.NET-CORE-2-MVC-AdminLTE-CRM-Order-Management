@@ -18,4 +18,24 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Areas\crm\Controllers\" />
+    <Folder Include="Areas\crm\Data\" />
+    <Folder Include="Areas\crm\Models\" />
+    <Folder Include="Areas\crm\Views\" />
+    <Folder Include="Areas\inventory\Controllers\" />
+    <Folder Include="Areas\inventory\Data\" />
+    <Folder Include="Areas\inventory\Models\" />
+    <Folder Include="Areas\inventory\Views\" />
+    <Folder Include="Areas\purchaseorder\Controllers\" />
+    <Folder Include="Areas\purchaseorder\Data\" />
+    <Folder Include="Areas\purchaseorder\Models\" />
+    <Folder Include="Areas\purchaseorder\Views\" />
+    <Folder Include="Areas\salesorder\Controllers\" />
+    <Folder Include="Areas\salesorder\Data\" />
+    <Folder Include="Areas\salesorder\Models\" />
+    <Folder Include="Areas\salesorder\Views\" />
+    <Folder Include="Areas\security\Data\" />
+  </ItemGroup>
+
 </Project>

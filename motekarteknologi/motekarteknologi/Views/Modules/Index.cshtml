@@ -1,0 +1,25 @@
+﻿@model IEnumerable<motekarteknologi.ViewModels.Module>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_LayoutModules";
+}
+
+<h2>Modules</h2>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+
+        @if (User.IsInRole(item.Role))
+        {
+            @Html.Partial("_Card", item)
+
+        }
+
+
+    }
+</div>
+
+
+
