@@ -30,6 +30,12 @@ namespace motekarteknologi.Areas.security.Controllers
             _roleManager = roleManager;
         }
 
+        [HttpGet]
+        public async Task<IActionResult> AddEditRole(Guid? ID)
+        {
+            return PartialView("~/Areas/security/Views/ApplicationUsers/_Roles.cshtml");
+        }
+
         // GET: security/ApplicationUsers
         public async Task<IActionResult> Index()
         {

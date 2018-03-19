@@ -30,7 +30,16 @@
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
-
+<div>
+    <h1>Roles</h1>
+</div>
+<div>
+    <div class="btn-group">
+        <a id="addRole" data-toggle="modal" asp-action="AddEditRole" data-target="#addEditRole" class="btn btn-primary">
+            <i class="glyphicon glyphicon-plus"></i>  Add Role
+        </a>
+    </div>
+</div>
 <div>
     @if (roles != null)
     {
@@ -38,7 +47,7 @@
             <thead>
                 <tr>
                     <th>
-                       Nama Role
+                        Nama Role
                     </th>
                     <th></th>
                 </tr>
@@ -59,7 +68,12 @@
         </table>
     }
 </div>
-
+@await Html.PartialAsync("_Modal", new Modal
+{
+    ID = "addEditRole",
+    AreaLabelID = "addEditRoleLabel",
+    Size = ModalSize.Medium
+})
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
